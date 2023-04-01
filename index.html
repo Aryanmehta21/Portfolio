@@ -1,249 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio Website using HTML, CSS, JavaScript By Aryan Mehta!!" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal Portfolio Website using HTML, CSS, JavaScript By Aryan Mehta!!"
+    />
     <title>Portfolio Website: Aryan Mehta</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/eb8afed685.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/eb8afed685.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <a href="#Home"><img src="Images/logo.jpeg" class="logo"></a>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Skills</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contacts</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1>Hi, I'm <span>Aryan Mehta</span></h1>
-                <p>Aspiring Web-Developer</p>
-            </div>
-
-        </div>
+      <div class="container">
+        <nav>
+          <a href="#Home"><img src="Images/logo.jpeg" class="logo" /></a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
     </div>
-
+    <div class="name">
+      <div class="container">
+        <div class="header-text">
+          <h1>Hi, I'm <span>Aryan Mehta</span></h1>
+          <p>Aspiring Web-Developer</p>
+        </div>
+      </div>
+    </div>
 
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/user.jpg" alt="userImage">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hi, My name is <em>Aryan Mehta</em> and I am a Student at VIT, Bhopal. I am passionate about
-                        coding
-                        and development and I am always eager to learn new technologies and techniques.
-                        Through this portfolio, I showcase some of my past and current projects as well as my skills and
-                        experiences.
-                        Please feel free to contact me for any opportunities or collaborations.</p>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/user1.jpg" alt="userImage" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, My name is <em>Aryan Mehta</em> and I am a Student at VIT,
+              Bhopal. I am passionate about coding and development and I am
+              always eager to learn new technologies and techniques. Through
+              this portfolio, I showcase some of my past and current projects as
+              well as my skills and experiences. Please feel free to contact me
+              for any opportunities.
+            </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web development</span><br>Designing Web Interfaces</li>
-                            <li><span>App Development</span><br>Creating Android Apps</li>
-                            <li><span>Problem Solving</span><br>Good At Problem Solving</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web development</span><br>Designing Web/App Interfaces</li>
-                            <li><span>App development</span><br>Designing Web/App Interfaces</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2020-current</span><br>B.tech CSE Core at VIT, Bhopal</li>
-                            <li><span>2018-2020</span><br>Secondary School at St.karens High School, Patna</li>
-                            <li><span>Till 2018</span><br>High School at St.karens High School, Patna</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('certification')">
+                Certifications
+              </p>
+              <p class="tab-links" onclick="opentab('hobby')">Hobbies & Languages</p>
             </div>
+            <div class="tab-contents active-tab" id="education">
+                <ul>
+                  <li>
+                    <span>2020-current</span><br />B.tech CSE Core at VIT, Bhopal
+                  </li>
+                  <li>
+                    <span>2018-2020</span><br />Secondary School at St.karens High
+                    School, Patna
+                  </li>
+                  <li>
+                    <span>Till 2018</span><br />High School at St.karens High
+                    School, Patna
+                  </li>
+                </ul>
+              </div>
+            <div class="tab-contents" id="certification">
+              <ul>
+                <li><span>Data Analytics</span><br />Fundamentals of Data Analytics, Futureskills prime.</li>
+                <li>
+                  <span>Data Science</span><br />Microlearning Course in Data Science, Board Infinity.
+                </li>
+                <li>
+                  <span>Cloud Computing</span><br />Google Cloud Computing Foundation with Kubernetes.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="hobby">
+              <ul>
+                <li>
+                  <span>Hobbies</span><!--<br />B.tech CSE Core at VIT, Bhopal--><br/>Reading Books<br/>Web Exploring
+                </li>
+                <!-- <li>
+                  <span></span><br />Secondary School at St.karens High
+                  School, Patna
+                </li> -->
+                <li>
+                  <span>Languages Known</span><br />English<br/>Hindi
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
 
     <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1>
 
-        <div class="container">
-            <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Web Design</h2>
+            <p>
+              <h5>I Work on React.js framework called <b>Next.js</b>. I have Projects listed below:<br/></h5>
+              <li><b>Food Delivery App</b> using React.js(Next.js) which is currently under development.<br/></li>
+              <li><b>Discussion Forum</b> Made using Next.js for discussing queries with others by posting them in form of comments.<br/></li>
+              <li><b>Weather App</b> using Next.js it shows weather of any place in the world with sunrise, sunset, precipitation, etc.</li>
 
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Frontend Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vel voluptatem minima obcaecati
-                        non ratione velit, ad esse, consequuntur nulla corporis magnam perspiciatis deserunt optio est
-                        voluptatum consequatur harum possimus excepturi odit illum veniam veritatis.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-android"></i>
-                    <h2>Android Developer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vel voluptatem minima obcaecati
-                        non ratione velit, ad esse, consequuntur nulla corporis magnam perspiciatis deserunt optio est
-                        voluptatum consequatur harum possimus excepturi odit illum veniam veritatis.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Problem Solving</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vel voluptatem minima obcaecati
-                        non ratione velit, ad esse, consequuntur nulla corporis magnam perspiciatis deserunt optio est
-                        voluptatum consequatur harum possimus excepturi odit illum veniam veritatis.</p>
-                    <a href="https://leetcode.com/Aryan_21/" target="_blank">Learn more</a>
-                </div>
-            </div>
+            </p>
+            <a href="https://github.com/Aryanmehta21" target = "_blank"class="btn btn2">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>Technical Knownledge</h2>
+            <p>
+              <li>Java</li>
+              <li>React.js</li>
+              <li>Next.js</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </p>
+            <!-- <a href="#" class="btn btn2">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Problem Solving</h2>
+            <p>
+              <h3>Leetcode:<br/></h3>
+              Questions Solved: 207 and counting<br/>
+              <h3>HackerRank:<br/></h3>
+              <li>3 Star Problem Solving<br/></li>
+              <li>3 Star Java<br/></li>
+              <li>4 Star Python<br/></li>
+              <li>30 Days Of Code<br/></li>
+            </p>
+            <a href="https://leetcode.com/Aryan_21/" target="_blank" class="btn btn2"
+              >Learn more</a
+            >
+          </div>
         </div>
+      </div>
     </div>
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="Images/work-1.png" alt="Project Image">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis illo nemo ipsum enim ab.
-                            Eligendi rem, reprehenderit impedit rerum earum obcaecati tempore fuga quod deserunt
-                            corrupti excepturi dolorem tempora quae officiis, esse provident neque.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Images/work-2.png" alt="Project Image">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis illo nemo ipsum enim ab.
-                            Eligendi rem, reprehenderit impedit rerum earum obcaecati tempore fuga quod deserunt
-                            corrupti excepturi dolorem tempora quae officiis, esse provident neque.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Images/work-3.png" alt="Project Image">
-                    <div class="layer">
-                        <h3>Weather Now</h3>
-                        <p>Weather App using next.js. You can directly search for cities in the search bar, also there are 4 famous cities of India which is hardcoded, you can click on it to directly go on the weather page. After searching the city you will be redirected to the new page where you can see Current temperature, sunrise, sunset time, pressure, etc.</p>
-                        <a href="https://weather-app-tm-public-aryanmehta21.vercel.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/work1.png" alt="Project Image" />
+            <div class="layer">
+              <h3>Food Ordering Website (Under Development)</h3>
+              <p>
+                Full stack web development for ordering food from our cafe with Integrated Payment method(PayPal). User can order food and can see the status of the food that is it being ready or out for delivery or not.
+              </p>
+              <a href="https://github.com/Aryanmehta21/food_ordering_cafe_Panda" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-            <a href="https://github.com/Aryanmehta21" target="_blank" class="btn">See more</a>
+          </div>
+          <div class="work">
+            <img src="Images/work_2.1.png" alt="Project Image" />
+            <div class="layer">
+              <h3>Comment App</h3>
+              <p>
+                Friendly discussion forum where people can log in using their
+                google email id and discuss queries with others by posting them in form
+                of comments.
+              </p>
+              <a href="https://comment-app-eta.vercel.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-3.png" alt="Project Image" />
+            <div class="layer">
+              <h3>Weather Now</h3>
+              <p>
+                Weather App using next.js. You can directly search for cities in
+                the search bar, also there are 4 famous cities of India which is
+                hardcoded, you can click on it to directly go on the weather
+                page. After searching the city you will be redirected to the new
+                page where you can see Current temperature, sunrise, sunset
+                time, pressure, etc.
+              </p>
+              <a
+                href="https://weather-app-tm-public-aryanmehta21.vercel.app"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <a href="https://github.com/Aryanmehta21" target="_blank" class="btn"
+          >See more</a
+        >
+      </div>
     </div>
 
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-regular fa-envelope"></i>aryanmehta310@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+917903333650</p>
-                    <div class="social-icons">
-                        <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
-                        <a href="https://www.linkedin.com/in/aryan-mehta-0743571b7/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Aryanmehta21" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/aryan.21.02/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <a href="Aryan resume.docx" download class="btn btn2">Download Resume</a>
-                    <a href="https://linktr.ee/aryan2102" target="_blank" class="btn btn3">Other Links</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>aryanmehta310@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+917903333650</p>
+            <h3>Profiles</h3>
+            <div class="social-icons">
+              <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+              <a
+                href="https://www.linkedin.com/in/aryan-mehta-0743571b7/"
+                target="_blank"
+                ><!--<i class="fa-brands fa-linkedin"></i
+              >-->
+                <img src="Images/l1.svg" alt="" class="image"
+              /></a>
+              <a href="https://github.com/Aryanmehta21" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <!-- <a href="https://www.instagram.com/aryan.21.02/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a> -->
+              <a href="https://leetcode.com/Aryan_21/" target="_blank"
+                ><img src="Images/leet3.png" alt="" class="image"
+              /></a>
+              <a href="https://www.hackerrank.com/aryanmehta310" target="_blank"
+                ><img src="Images/h1.svg" alt="" class="image"
+              /></a>
             </div>
+            <a href="Aryan resume.docx" download class="btn btn2"
+              >Download Resume</a
+            >
+            <a
+              href="https://linktr.ee/aryan2102"
+              target="_blank"
+              class="btn btn3"
+              >Other Links</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright <sup>&copy;</sup> Aryan Mehta </p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright <sup>&copy;</sup> Aryan Mehta</p>
+      </div>
     </div>
 
-
-
     <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
     <script>
+      var sidemenu = document.getElementById("sidemenu");
 
-        var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
 
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
     </script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxXuc7w_DrAOxZfjFq1o7X3_QbIxEd9ofKVJ-cnaoRIQkVbdX1VaXPbFiC57pKGpaOgkw/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxXuc7w_DrAOxZfjFq1o7X3_QbIxEd9ofKVJ-cnaoRIQkVbdX1VaXPbFiC57pKGpaOgkw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message Sent Successfully!"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-        let docTitle = document.title;
-        window.addEventListener("blur", () => {
-            document.title = "Thank You for Viewing😊";
-        })
-        window.addEventListener("focus", () => {
-            document.title = docTitle;
-        })
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+      let docTitle = document.title;
+      window.addEventListener("blur", () => {
+        document.title = "Thank You for Viewing😊";
+      });
+      window.addEventListener("focus", () => {
+        document.title = docTitle;
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
