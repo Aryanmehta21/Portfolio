@@ -366,8 +366,9 @@ nav .fa-solid{
         font-size: 16px;
     }
     .name{
-        width: 600px;
-        height: 800px;
+        width: 46vh;
+        height: 760px;
+        /* height: 100vh; */
     }
     .header-text h1{
         font-size: 30px;
@@ -419,6 +420,9 @@ nav .fa-solid{
 
     .contact-left, .contact-right{
         flex-basis: 100%;
+    }
+    .contact-left .btn.btn3{
+        width: 75%;
     }
 
     .copyright{
