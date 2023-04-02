@@ -140,10 +140,11 @@ width: 100%;
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    font-size: 14px;
 }
 .tab-contents ul li span{
     color: #ff004f;
-    font-size: 14px;
+    font-size: 18px;
 }
 .tab-contents{
     display: none;
@@ -363,6 +364,10 @@ nav .fa-solid{
     .header-text{
         margin-top: 100%;
         font-size: 16px;
+    }
+    .name{
+        width: 600px;
+        height: 800px;
     }
     .header-text h1{
         font-size: 30px;
