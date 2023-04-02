@@ -366,8 +366,13 @@ nav .fa-solid{
         font-size: 16px;
     }
     .name{
-        width: 46vh;
+        max-width: 100%;
+        /* max-height: 100%; */
+        overflow-x: hidden;
+        /* width: 50vh;*/
         height: 760px;
+        /* overflow: hidden; */
+        /* display: none; */
         /* height: 100vh; */
     }
     .header-text h1{
